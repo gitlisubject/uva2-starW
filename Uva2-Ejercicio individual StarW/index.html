@@ -1,0 +1,69 @@
+
+<!-- UVA2: Ejercicio individual: Formato de texto
+Lea el material mencionado y responda las siguientes consignas:   
+Agarrá tu sable láser y entrá a esta página https://ejercicio-css-star-wars.netlify.app/   
+ ¡Que la fuerza te acompañe!  
+1.	Hacé click derecho en la página e ingresá a su código fuente (shortcut: Ctr+U en PC, o Cmd+U en Mac).  
+2.	Copiá ese código y pegalo en un archivo HTML nuevo.  
+3.	Creá una hoja de estilo nueva y vinculala al HTML, creando un nuevo tag link debajo del que ya tiene (un HTML puede estar vinculado a más de una hoja de estilo sin ningún problema).  
+4.	Dentro de tu CSS, creá una clase para el imperio que genere un background-color red, y asignásela a cada uno de los miembros del imperio en los opening tags de sus <li> dentro del archivo HTML.  
+5.	Hacé lo mismo para los rebeldes, pero que la clase genere un background-color blue.  
+6.	Creá un ID para Darth Vader que aumente el tamaño de la letra de su nombre y un ID para Luke que lo ponga en itálica. 
+7.	Creá una clase para los soldados que les defina un borde a rayas usando la propiedad de CSS border, y buscá en Google qué valores podés darle a border. 
+8.	Creá una clase para los soldados que aumente el espacio entre sus letras con la propiedad de CSS letter-spacing. 
+9.	Creá una clase para las unidades de apoyo y centralas con la propiedad de CSS text-align. 
+10.	Creá una clase para las naves y buscá en Google un atributo CSS que te permita poner todas las letras de sus nombres en mayúscula. -->
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>UVA2: Ejercicio individual: Formato de texto</title>
+    <link rel="stylesheet" href="ejercicio_clases_ids_css_starwars.css" type="text/css">
+    <link rel="stylesheet" href="estilo.css" type="text/css">
+  </head>
+  <body>
+    <h1>Los bandos de Star Wars</h1>
+    <p>(las originales, que eran la posta)</p>
+    <hr>
+    <h2>El imperio</h2>
+    <ul>
+      <li class="imperio" id="vader">Líder: Darth Vader</li>
+      <img src="https://s.yimg.com/ny/api/res/1.2/RCcrBUSta6f2VQyCZs9HYQ--/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAwO2lsPXBsYW5l/http://media.zenfs.com/en_US/News/BGR_News/darth-vader-daily-life-9.jpg" alt="" /><br><br>
+      <li class="imperio soldado">Tropa principal: Storm Trooper</li>
+      <img src="http://www.sideshowtoy.com/wp-content/uploads/2014/10/902292-product-thumb.jpg" alt="" /><br><br>
+      <li class="apoyo">Unidades de apoyo:
+        <ul>
+          <li class="imperio">Caminante</li>
+          <img src="http://ps4daily.com/wp-content/uploads/2015/04/battlefront-at-at-walker-640x398.jpg" alt="" /><br><br>
+          <li class="imperio nave">Tie Fighter</li>
+          <img src="http://vignette1.wikia.nocookie.net/starwars/images/9/92/TIEfighter2-Fathead.png/revision/latest?cb=20150309055216" alt="" /><br><br>
+        </ul>
+      </li>
+    </ul>
+
+    <hr>
+
+    <h2>Los rebeldes</h2>
+    <ul>
+      <li class="rebeldes" id="luke">Líder: Luke Skywalker</li>
+      <img src="http://rightwingnews.com/wp-content/uploads/2016/03/luke-skywalker-gay-2.jpg" alt="" /><br><br>
+      <li class="rebeldes soldado">Tropa principal: Soldado cualunque</li>
+      <img src="http://vignette1.wikia.nocookie.net/united-players/images/6/69/Standard_rebel_soldiers.jpg/revision/latest?cb=20131214023311" alt="" /><br><br>
+      <li class="apoyo">Unidades de apoyo:
+        <ul>
+          <li class="rebeldes">Tanque</li>
+          <img src="http://vignette2.wikia.nocookie.net/starwars/images/f/f1/T3-B.jpg/revision/latest?cb=20050709081448" alt="" /><br><br>
+          <li class="rebeldes nave">X-Wing</li>
+          <img src="http://vignette4.wikia.nocookie.net/starwars/images/3/3d/X-wing_Ultimate.png/revision/latest?cb=20150508162001" alt="" /><br><br>
+        </ul>
+      </li>
+    </ul>
+    <hr>
+  </body>
+</html>
